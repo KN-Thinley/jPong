@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Pong Game!</title>
+    <!-- Project contains CSS and jQuery used -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="start-container">
+            <!-- instructions of the game -->
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Move the Player using your Mouse</li>
+                    <li>The Player is located at the <b><em>Right Side</em></b> of the Screen</li>
+                    <li>The general rule of the game is similar to that of the real Ping Pong game</li>
+                    <li>Whoever scores 11 points first, wins the game.</li>
+                    <li>Well, GOOD LUCK!</li> 
+                    <li>- KN Thinley</li>
+                </ol>
+            </div>
+            <!-- start game button -->
+           <button class="custom-btn btn">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Start Game
+            </a>
+           </button>
+        </div>
+        <!-- Main game container -->
+        <div class="game-container">
+            
+            <div class="score">
+                <div class="player1">
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <small>Computer</small>
+                    </a>
+                    <div id="opponentScore">
+                        0
+                    </div>
+                </div>
+                <div class="player2">
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <small>Player</small>
+                    </a>
+                    <div id="playerScore">
+                        0
+                    </div>
+                </div>
+                
+            </div>
+            <!-- horizontal line for pong board line -->
+            <hr class="line">
+            <!-- pong net design -->
+            <div class="net">
+            </div>
+            <!-- empty container to shape the pong and the bats for the game -->
+            <div class="pong" id="pong"></div>
+            <div class="bat right" id="playerBat">
+            </div>
+            <div class="bat left" id="opponentBat">
+            </div>
+
+            <!-- importing external js file -->
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
